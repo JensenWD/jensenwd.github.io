@@ -67,7 +67,7 @@
             <div class="clearfix"></div>
             <h2 class="section-heading">City Handyman LLC</h2>
             <p class="lead">This was for a local handyman company seeking to be exposed on web searches and have an online presence. The website is missing one feature which is soon to be implemented which is a quote calculator based on the clients inputs. You can see the website and its mobile responsiveness
-                <a href="https://www.cityhandymanllc.com" target="_blank"><strong>here</strong></a></p>
+                <a href="http://www.cityhandymanllc.com" target="_blank"><strong>here</strong></a></p>
           </div>
           <div v-on:click.prevent="rot_handy" class="col-lg-5 col-sm-pull-6  col-sm-6">
             <img class="img-responsive" src="{{photo_handy}}" alt="website view">
@@ -176,5 +176,17 @@
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;amp;sensor=false"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
     <script src="js/components.js"></script>
+    <!-- GMaps API -->
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 25.947976, lng: -80.144650},
+          zoom: 8
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlZc9EnHkQhmojyvyAlKdEJ46TrqNazzQ&callback=initMap"
+    async defer></script>
   </body>
 </html>
