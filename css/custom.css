@@ -1,41 +1,37 @@
-/*
-Error: Inconsistent indentation: "    \t" was used for indentation, but the rest of the document was indented using 1 tab.
-        on line 30 of custom.sass
+.gallery:hover {
+  cursor: pointer; }
 
-25: 	background: white !important
-26: 	header
-27: 		background: #2b90d9 !important
-28: 	h3
-29: 		color: white !important
-30:     	font-weight: 500 !important
-31:     .shepard-text
-32:     	font-weight: 500 !important
-33:     footer
-34:     	background: white !important
+.social {
+  margin: 0 auto;
+  text-align: center; }
+  .social strong {
+    color: #202020; }
 
-Backtrace:
-custom.sass:30
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:486:in `block in tabulate'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:444:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:444:in `each_with_index'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:444:in `tabulate'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:409:in `_to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Inconsistent indentation: \"    \t\" was used for indentation, but the rest of the document was indented using 1 tab.\A         on line 30 of custom.sass\A \A 25: 	background: white !important\A 26: 	header\A 27: 		background: #2b90d9 !important\A 28: 	h3\A 29: 		color: white !important\A 30:     	font-weight: 500 !important\A 31:     .shepard-text\A 32:     	font-weight: 500 !important\A 33:     footer\A 34:     	background: white !important"; }
+.social-icon {
+  max-width: 40px;
+  font-size: 40px;
+  margin-left: -5px;
+  color: white; }
+
+.social-wrap {
+  padding: 60px;
+  text-align: center;
+  height: 240px;
+  margin: 0 auto;
+  background: #2b90d9;
+  color: white; }
+
+.shepard-content {
+  background: white !important; }
+  .shepard-content header {
+    background: #2b90d9 !important; }
+  .shepard-content h3 {
+    color: white !important;
+    font-weight: 500 !important; }
+  .shepard-content footer {
+    background: white !important; }
+
+.shepard-text {
+  font-weight: 500 !important; }
+
+/*# sourceMappingURL=custom.css.map */
