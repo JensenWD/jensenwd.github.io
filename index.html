@@ -27,15 +27,17 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
   </head>
   <body>
-    <section id="intro" class="text-intro no-padding-bottom">
-      <div class="container">
+    <div id="intro" class="text-intro">
+    <div class="background-c">
+      <div class="container abs-title">
         <div class="row">
           <div class="col-md-12 col-lg-10">
             <h1>Hey!<br />Welcome to my portfolio. I'm <span class="text-primary">Johnatan</span>, a <span class="text-primary">fullstack web developer</span> living in Miami, FL</h1>
           </div>
         </div>
+        </div>
       </div>
-    </section>
+    </div>
     <!-- portfolio-->
     <div id="img-rotate">
     <div class="content-section-a">
@@ -94,11 +96,11 @@
           <div class="col-sm-12">
             <div class="row">
               <div class="col-sm-6 text-left">
-                <p>Born and raised in the South Florida community. I'm of Brazilian origin and currently 23 years old with
+                <p>Born and raised in the South Florida community. I'm of Brazilian decent and currently 23 years old with
                     a <strong>B.S. in Computer Science</strong> from Florida International University. Albeit I'm looking for company work, I created this portfolio for side
-                    project clients to view and for myself to save my work.
+                    project and clients to view and for myself to save my work.
                     I prize myself on making every webapp and website mobile responsive, snappy and using best practices.</p>
-                <p><img src="img/me_pro_pic.jpg" width="380" alt="This is me" class="image img-circle img-responsive"></p>
+                <p><img src="img/me_pro_pic.jpg" width="360" alt="This is me" class="image img-circle img-responsive"></p>
               </div>
               <div class="col-sm-6">
                   <div class="skill-item">
@@ -120,15 +122,13 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 mt-big"></div>
-        </div>
       </div>
     </section>
     <section id="contact">
       <div class="container clearfix">
         <div class="row">
           <div class="col-md-12">
-            <h2 class="heading">Contact</h2>
+            <h2 class="heading">Let's get in touch!</h2>
             <div class="row">
               <div class="col-md-12">
                 <form id="contact-form" method="post" action="contact.php" class="contact-form form">
@@ -136,23 +136,23 @@
                     <div class="row">
                       <div class="col-sm-6">
                         <div class="form-group">
-                          <label for="name">Your firstname *</label>
+                          <label for="name">Firstname</label>
                           <input type="text" name="name" id="name" placeholder="Enter your firstname" required="required" class="form-control">
                         </div>
                       </div>
                       <div class="col-sm-6">
                         <div class="form-group">
-                          <label for="surname">Your lastname *</label>
-                          <input type="text" name="surname" id="surname" placeholder="Enter your  lastname" required="required" class="form-control">
+                          <label for="surname">Lastname</label>
+                          <input type="text" name="surname" id="surname" placeholder="Enter your lastname" required="required" class="form-control">
                         </div>
                       </div>
                     </div>
                     <div class="form-group">
-                      <label for="email">Your email *</label>
+                      <label for="email">Your email</label>
                       <input type="email" name="email" id="email" placeholder="Enter your  email" required="required" class="form-control">
                     </div>
                     <div class="form-group">
-                      <label for="message">Your message for us *</label>
+                      <label for="message">The message</label>
                       <textarea rows="4" name="message" id="message" placeholder="Enter your message" required="required" class="form-control"></textarea>
                     </div>
                     <div class="text-center">
@@ -193,13 +193,15 @@
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;amp;sensor=false"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
     <script src="js/components.js"></script>
+    <!-- Background by trianglify -->
+
     <!-- GMaps API -->
     <script>
       var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 25.947976, lng: -80.144650},
-          zoom: 8
+          zoom: 10
         });
       }
     </script>

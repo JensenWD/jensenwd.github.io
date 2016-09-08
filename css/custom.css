@@ -1,3 +1,24 @@
+section {
+  z-index: 100 !important;
+  background: white; }
+
+.content-section-b {
+  background: white; }
+
+.background-c {
+  background-image: url("pattern.png");
+  background-position: center;
+  background-size: cover;
+  z-index: -100 !important;
+  position: fixed;
+  height: 100%;
+  width: 100%; }
+
+.abs-title {
+  position: relative;
+  padding: 20px;
+  margin-top: 45px; }
+
 .gallery:hover {
   cursor: pointer; }
 

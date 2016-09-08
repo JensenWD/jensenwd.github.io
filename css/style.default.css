@@ -10,10 +10,19 @@ body {
 header {
   z-index: 1000;
 }
+
+.text-intro {
+  padding-bottom: 40px;
+  height: 90%;
+}
+
+.text-intro h1 {
+  color: white !important;
+}
+
 section {
   position: relative;
   padding-top: 90px;
-  padding-bottom: 90px;
 }
 section.background-gray-lighter {
   background: #eeeeee;
