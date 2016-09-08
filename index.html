@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="css/landing-page.css" id="theme-stylesheet">
     <!-- Custom stylesheet - for your changes-->
     <link rel="stylesheet" href="css/custom.css">
+    <!-- Shepard.js -->
+    <script src="//fast.eager.io/p_PSlZhXv5.js"></script>
     <!-- Favicon-->
     <link rel="shortcut icon" href="favicon.png">
     <!-- Tweaks for older IEs--><!--[if lt IE 9]>
@@ -43,10 +45,11 @@
             <hr class="section-heading-spacer">
             <div class="clearfix"></div>
             <h2 class="section-heading">Vertically Integrated Projects</h2>
-            <p class="lead">This was a Senior project for my final year at the wonderful university. The website integrates all tools necessary for collaboration between Faculty and students into one place with much more functionality such as profiles, admin panels and a messaging system. This system was built on AngularJS, Node.js and MonogoDB. The webapp is currently in use at the university. Checkout my contributions to the site
-                <a href="https://goo.gl/bc3KP2" target="_blank"><strong>here</strong></a> </p>
+            	<p class="lead">This was a Senior project for my final year at the wonderful university. The website integrates all tools necessary for collaboration between Faculty and students into one place with much more functionality such as profiles, admin panels and a messaging system. This system was built on AngularJS, Node.js and MonogoDB. The webapp is currently in use at the university. Checkout my contributions to the site
+                <a href="https://goo.gl/bc3KP2" target="_blank"><strong>here</strong></a> 
+                </p>
           </div>
-          <div v-on:click.prevent="rot_vip" class="col-lg-5 col-lg-offset-2 col-sm-6">
+          <div v-on:click.prevent="rot_vip" class="col-lg-5 col-lg-offset-2 col-sm-6 gallery">
             <img class="img-responsive" src="{{photo_vip}}" alt="website view">
           </div>
         </div>
@@ -69,7 +72,7 @@
             <p class="lead">This was for a local handyman company seeking to be exposed on web searches and have an online presence. The website is missing one feature which is soon to be implemented which is a quote calculator based on the clients inputs. You can see the website and its mobile responsiveness
                 <a href="http://www.cityhandymanllc.com" target="_blank"><strong>here</strong></a></p>
           </div>
-          <div v-on:click.prevent="rot_handy" class="col-lg-5 col-sm-pull-6  col-sm-6">
+          <div v-on:click.prevent="rot_handy" class="col-lg-5 col-sm-pull-6  col-sm-6 gallery">
             <img class="img-responsive" src="{{photo_handy}}" alt="website view">
           </div>
         </div>
@@ -127,7 +130,7 @@
           <div class="col-md-12">
             <h2 class="heading">Contact</h2>
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-12">
                 <form id="contact-form" method="post" action="contact.php" class="contact-form form">
                   <div class="controls">
                     <div class="row">
@@ -158,18 +161,32 @@
                   </div>
                 </form>
               </div>
-              <div class="col-md-6">
-                <p>Effects present letters inquiry no an removed or friends. Desire behind latter me though in. Supposing shameless am he engrossed up additions. My possible peculiar together to. Desire so better am cannot he up before points. Remember mistaken opinions it pleasure of debating. Court front maids forty if aware their at. Chicken use are pressed removed. </p>
-                <p>Able an hope of body. Any nay shyness article matters own removal nothing his forming. Gay own additions education satisfied the perpetual. If he cause manor happy. Without farther she exposed saw man led. Along on happy could cease green oh. </p>
-                <p class="social"><a href="#" title="" class="facebook"><i class="fa fa-facebook"></i></a><a href="#" title="" class="twitter"><i class="fa fa-twitter"></i></a><a href="#" title="" class="gplus"><i class="fa fa-google-plus"></i></a><a href="#" title="" class="instagram"><i class="fa fa-instagram"></i></a><a href="#" title="" class="email"><i class="fa fa-envelope"></i></a></p>
-              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- map-->
-    <div id="map"></div>
+    <div class="col-sm-6" id="map"></div>
+    <div class="col-sm-6 social-wrap">
+    	<div class="row">
+    		<p>You can checkout some side projects or other works of mine and my professional affiliations below!</p>
+    	</div>
+        <div class="col-sm-4 social">
+        	<a href="https://github.com/jensenwd" target="_blank"><i class="fa fa-github social-icon" aria-hidden="true"></i></a>
+        	<strong><small>Github</small></strong>
+        </div>
+        <div class="col-sm-4 social">
+
+        	<a href="https://codepen.io/jensenwd" target="_blank"><i class="fa fa-codepen social-icon" aria-hidden="true"></i></a>
+        	<strong><small>CodePen</small></strong>
+        </div>
+        <div class="col-sm-4 social">
+
+        	<a href="https://www.linkedin.com/in/jensenwd" target="_blank"><i class="fa fa-linkedin social-icon" aria-hidden="true"></i></a>
+        	<strong><small>LinkedIn</small></strong>
+        </div>
+    </div>
     <!-- Javascript files-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>

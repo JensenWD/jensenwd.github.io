@@ -1,17 +1,3 @@
-/* 
-========================================= 
-========================================= 
-
-Designer Template By Bootstrapious.com 
-
-========================================= 
-========================================= */
-/* variant 5 - blue */
-/*
-
-=====================
-GENERAL
-=====================
 
 */
 html {
@@ -105,9 +91,9 @@ button i.fa {
   text-align: center;
 }
 #map {
-  height: 500px;
-  border-top: solid 1px #eeeeee;
-  border-bottom: solid 1px #eeeeee;
+  height: 240px;
+  /*width: 50%;*/
+  padding: 20px;
 }
 .btn-ghost {
   color: #2b90d9;
