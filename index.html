@@ -141,20 +141,23 @@
                     <div class="row">
                         <div class="form-group col-sm-6">
                           <label for="name">Your name</label>
-                          <input type="text" name="name" id="name" placeholder="Enter your full name" required class="form-control">
+                          <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
                         </div>
                       <div class="form-group col-sm-6">
                       <label for="email">Your email</label>
-                      <input type="email" name="email" id="email" placeholder="Enter your email" required class="form-control">
+                      <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
                     </div>
                     </div>
               
                     <div class="form-group">
                       <label for="message">The message</label>
-                      <textarea rows="4" name="message" id="message" placeholder="Enter your message" required class="form-control"></textarea>
+                      <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
                     </div>
-                    <div class="text-center">
-                      <input type="submit" value="Send message" class="btn btn-primary btn-block">
+                    <div id="success"></div>
+                    <div class="row">
+                        <div class="form-group col-xs-12">
+                            <button type="submit" class="btn btn-success btn-lg">Send</button>
+                        </div>
                     </div>
                   </div>
                 </form>
@@ -191,7 +194,9 @@
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;amp;sensor=false"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
     <script src="js/components.js"></script>
-    <!-- Background by trianglify -->
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
 
     <!-- GMaps API -->
     <script>
