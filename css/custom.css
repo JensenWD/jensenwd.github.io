@@ -1,9 +1,24 @@
+p {
+  color: #7F7F7F !important; }
+
+h1, h2, h3, h4, h5 {
+  color: #2b90d9 !important; }
+
 section {
   z-index: 100 !important;
   background: white; }
 
+.progress-title {
+  font-size: 1.3em; }
+
+.skill-item p {
+  font-size: 1.1em; }
+
 .content-section-b {
   background: white; }
+
+#contact {
+  padding-bottom: 70px; }
 
 .background-c {
   background-image: url("pattern.png");
@@ -37,10 +52,13 @@ section {
 .social-wrap {
   padding: 60px;
   text-align: center;
-  height: 240px;
+  height: 280px;
   margin: 0 auto;
   background: #2b90d9;
-  color: white; }
+  color: white !important; }
+
+.social-wrap p {
+  color: white !important; }
 
 .shepard-content {
   background: white !important; }
@@ -54,5 +72,16 @@ section {
 
 .shepard-text {
   font-weight: 500 !important; }
+
+@media (max-width: 900px) {
+  .text-intro {
+    padding-bottom: 20px; }
+
+  .text-intro h1 {
+    font-size: 50px; }
+
+  .abs-title {
+    margin-top: 5px !important;
+    padding: 15px; } }
 
 /*# sourceMappingURL=custom.css.map */

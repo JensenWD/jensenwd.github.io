@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
     <!-- Bootstrap and Font Awesome css-->
-    <!-- we use cdn but you can also include local files located in css directory-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <!-- Google fonts - Open Sans-->
@@ -102,21 +101,21 @@
                     I prize myself on making every webapp and website mobile responsive, snappy and using best practices.</p>
                 <p><img src="img/me_pro_pic.jpg" width="360" alt="This is me" class="image img-circle img-responsive"></p>
               </div>
-              <div class="col-sm-6">
+              <div class="col-sm-6 skills">
                   <div class="skill-item">
-                      <div class="progress-title">HTML5 + CSS (SASS)</div>
+                      <h4 class="progress-title">HTML5 + CSS(SASS/SCSS)</h4>
                       <p>5+ years</p>
                   </div>
                   <div class="skill-item">
-                      <div class="progress-title">Javascript + jQuery</div>
-                      <p>3+ years</p>
+                      <h4 class="progress-title">Javascript + jQuery</h4>
+                      <p>4+ years</p>
                   </div>
                 <div class="skill-item">
-                  <div class="progress-title">PHP + Laravel 5+</div>
+                  <h4 class="progress-title">PHP + Laravel 5+ + Vue.js</h4>
                     <p>2+ years</p>
                 </div>
                 <div class="skill-item">
-                  <div class="progress-title">Node.js + AngularJS + MongoDB/Mongoose</div>
+                  <h4 class="progress-title">Node.js + AngularJS + MongoDB/Mongoose</h4>
                   <p>1+ years</p>
                 </div>
               </div>
@@ -128,29 +127,24 @@
       <div class="container clearfix">
         <div class="row">
           <div class="col-md-12">
-            <h2 class="heading">Let's get in touch!</h2>
+            <h3 class="heading">Get in touch!</h3>
             <div class="row">
               <div class="col-md-12">
                 <form id="contact-form" method="post" action="contact.php" class="contact-form form">
                   <div class="controls">
                     <div class="row">
-                      <div class="col-sm-6">
-                        <div class="form-group">
-                          <label for="name">Firstname</label>
-                          <input type="text" name="name" id="name" placeholder="Enter your firstname" required="required" class="form-control">
+                      
+                        <div class="form-group col-sm-6">
+                          <label for="name">Your name</label>
+                          <input type="text" name="name" id="name" placeholder="Enter your full name" required="required" class="form-control">
                         </div>
-                      </div>
-                      <div class="col-sm-6">
-                        <div class="form-group">
-                          <label for="surname">Lastname</label>
-                          <input type="text" name="surname" id="surname" placeholder="Enter your lastname" required="required" class="form-control">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form-group">
+                      
+                      <div class="form-group col-sm-6">
                       <label for="email">Your email</label>
                       <input type="email" name="email" id="email" placeholder="Enter your  email" required="required" class="form-control">
                     </div>
+                    </div>
+              
                     <div class="form-group">
                       <label for="message">The message</label>
                       <textarea rows="4" name="message" id="message" placeholder="Enter your message" required="required" class="form-control"></textarea>
