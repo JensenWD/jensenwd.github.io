@@ -53,6 +53,13 @@ form {
   padding: 20px;
   margin-top: 45px; }
 
+.gallery {
+  display: inline-flex;
+  max-height: 450px; }
+  .gallery img {
+    margin: auto 5px;
+    max-height: 550px; }
+
 .gallery:hover {
   cursor: pointer; }
 
@@ -74,7 +81,8 @@ form {
   height: 280px;
   margin: 0 auto;
   background: #2b90d9;
-  color: white !important; }
+  color: white !important;
+  position: relative; }
 
 .social-wrap p {
   color: white !important; }
@@ -92,7 +100,7 @@ form {
 .shepard-text {
   font-weight: 500 !important; }
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
   .text-intro {
     padding-bottom: 20px; }
 
@@ -101,6 +109,15 @@ form {
 
   .abs-title {
     margin-top: 5px !important;
-    padding: 15px; } }
+    padding: 15px; }
+
+  .social-wrap {
+    height: 310px; }
+
+  .social-icon {
+    margin-left: 0px; }
+
+  .social {
+    margin-top: 2px; } }
 
 /*# sourceMappingURL=custom.css.map */

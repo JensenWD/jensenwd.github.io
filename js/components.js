@@ -3,8 +3,10 @@ new Vue ({
     data: {
         n: 1,
         i: 1,
+        m: 1,
         photo_vip: 'img/proj_descrp.png',
         photo_handy: 'img/handy_home.png',
+        photo_portfolio: 'img/portfolio_laptop.png',
         photo_arr: [
             ['img/proj_descrp.png',
                 'img/proj_overview.png',
@@ -12,6 +14,9 @@ new Vue ({
                 'img/resume_imac.png'],
             ['img/handy_home.png',
             'img/handy_services.png'],
+            ['img/portfolio_laptop.png',
+            'img/portfolio_ipad.png',
+            'img/portfolio_phone.png'],
         ],
     },
     methods: {
@@ -24,6 +29,11 @@ new Vue ({
             if (this.i > this.photo_arr[1].length - 1)
                 this.i = 0
             return this.photo_handy = this.photo_arr[1][this.i++]
+        },
+        rot_portfolio: function () {
+            if (this.m > this.photo_arr[2].length - 1)
+                this.m = 0
+            return this.photo_portfolio = this.photo_arr[2][this.m++]
         }
     }
 })
