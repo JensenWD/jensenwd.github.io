@@ -1,3 +1,22 @@
+//Gallery templates
+// <template id="gallery">
+// </template>
+Vue.component('gallery-right', {
+    template: '#gallery-right',
+    props: ['func-call', 
+    'photo-src']
+  })
+
+Vue.component('gallery-left', {
+    template: '#gallery-left',
+    props: ['func-call', 
+    'photo-src']
+  })
+
+
+
+
+// Photos component
 new Vue ({
     el: '#img-rotate',
     data: {
@@ -9,9 +28,9 @@ new Vue ({
         photo_portfolio: 'img/portfolio_laptop.png',
         photo_arr: [
             ['img/proj_descrp.png',
-                'img/proj_overview.png',
-                'img/proj_ipad.png',
-                'img/resume_imac.png'],
+            'img/proj_overview.png',
+            'img/proj_ipad.png',
+            'img/resume_imac.png'],
             ['img/handy_home.png',
             'img/handy_services.png'],
             ['img/portfolio_laptop.png',

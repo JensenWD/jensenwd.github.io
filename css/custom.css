@@ -54,7 +54,7 @@ form {
   margin-top: 45px; }
 
 .gallery {
-  display: inline-flex;
+  padding: 10px 5px;
   max-height: 450px; }
   .gallery img {
     margin: auto 5px;

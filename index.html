@@ -40,27 +40,27 @@
     <!-- portfolio-->
     <div id="img-rotate">
 	    <div class="content-section-a">
-	      <div class="container">
-	        <div class="row">
+	    	<div class="container">
+	    		<div class="row">
+	    			<div class="col-lg-5 col-sm-6">
+	    				<hr class="section-heading-spacer">
+	    				<div class="clearfix"></div>
+			            <h2 class="section-heading">Vertically Integrated Projects</h2>
+			            	<p class="lead">This was a 3 month long project for my final year at the Florida International University. My software team and I worked on this as a fulltime job basically for those 3 months. We had daily scrums and used Mingle for user stories. The website integrates all tools necessary for collaboration between Faculty and students into one place with much more functionality such as profiles, admin panels and a messaging system. The webapp is currently in use at the university. Checkout my contributions to the site <a href="https://goo.gl/bc3KP2" target="_blank"><strong>here</strong></a>
+			            	<br><br>
+			            	<small><i>Features and functionality: HTML5, CSS3, Bootstrap, AngularJS, Node.js, MongoDB, Git, mobile responsiveness, Agile, scrum</i></small>
+			                </p>
+			          </div>
 
-	          <div class="col-lg-5 col-sm-6">
-	            <hr class="section-heading-spacer">
-	            <div class="clearfix"></div>
-	            <h2 class="section-heading">Vertically Integrated Projects</h2>
-	            	<p class="lead">This was a senior project for my final year at the Florida International University. The website integrates all tools necessary for collaboration between Faculty and students into one place with much more functionality such as profiles, admin panels and a messaging system. The webapp is currently in use at the university. Checkout my contributions to the site <a href="https://goo.gl/bc3KP2" target="_blank"><strong>here</strong></a>
-	            	<br><br>
-	            	<i>Features and functionality: HTML5, CSS3, Bootstrap, AngularJS, Node.js, MongoDB, Git, mobile responsiveness</i>
-	                </p>
-	          </div>
+			          <gallery-right :func-call="rot_vip"
+			          :photo-src="photo_vip">
+			          </gallery-right>
 
-	          <div v-on:click.prevent="rot_vip" class="col-lg-5 col-lg-offset-2 col-sm-6 gallery">
-	            <img class="img-responsive" src="{{photo_vip}}" alt="website view">
-	          </div>
-
-	        </div>
-
-	      </div>
+	    		</div>
+	    	</div>
 	    </div>
+	
+
 
 	    <div class="content-section-b">
 	      <div class="container">
@@ -72,13 +72,13 @@
 	            <h2 class="section-heading">City Handyman LLC</h2>
 	            <p class="lead">This was for a local handyman company seeking to be exposed on web searches and have an online presence. The website will soon include a quote calculator that will give an estimated cost analysis based on client inputs and answers built with Vue.js and jQuery. You can see the website and its mobile responsiveness <a href="http://www.cityhandymanllc.com" target="_blank"><strong>here</strong></a>
 	            <br><br>
-	        	<i>Features and functionality: HTML5, CSS3, Vue.js, Bootstrap, mobile resposiveness, modular quote calculator</i>
+				<small><i>Features and functionality: HTML5, CSS3, Vue.js, JSON, Ajax, Bootstrap, mobile resposiveness, modular quote calculator</i></small>
 	            </p>
 	          </div>
 
-	          <div v-on:click.prevent="rot_handy" class="col-lg-5 col-sm-pull-6  col-sm-6 gallery">
-	            <img class="img-responsive" src="{{photo_handy}}" alt="website view">
-	          </div>
+	          <gallery-left :func-call="rot_handy"
+	          :photo-src="photo_handy">
+	          </gallery-left>
 
 	        </div>
 	      </div>
@@ -94,16 +94,36 @@
 	            <h2 class="section-heading">My Portfolio</h2>
 	            	<p class="lead"> I wanted something that got straight to the point so prospective clients and employers can use their time talking to me then navigating my portfolio. So first thing as always is to introduce yourself thus the parallax header. Then straight to the projects which is what anyone viewing your portfolio wants to see. They contain a subtle gallery feature if you click on the picture, non-esstential but it's there for people who want to see more of the websites via screenshots. The gallery is made with Vue.js and will be implemented with a global Vue function call. In the future I hope to link it to any image folders and it'll grab all the urls there and rotate through the files.
 	            	<br><br>
-	            	<i>Features and functionality: HTML5, CSS3, Git, mobile responsiveness, Vue.js, Bootstrap</i>
+	            	<small><i>Features and functionality: HTML5, CSS3, Git, mobile responsiveness, Vue.js, Bootstrap</i></small>
 	                </p>
 	          </div>
 
-	          <div v-on:click.prevent="rot_portfolio" class="col-lg-5 col-lg-offset-2 col-sm-6 gallery">
-	            <img class="img-responsive" src="{{photo_portfolio}}" alt="website view">
-	          </div>
+	          <gallery-right :func-call="rot_portfolio" 
+	          :photo-src="photo_portfolio">
+	          </gallery-right>
+
 	        </div>
 	      </div>
 	    </div>
+
+	    <div class="content-section-b">
+	      <div class="container">
+	        <div class="row">
+
+	          <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+	            <hr class="section-heading-spacer">
+	            <div class="clearfix"></div>
+	            <h2 class="section-heading">Budgeteer</h2>
+	            <p class="lead"> My current pet project. It'll be more of a debt management web application but I grew fond of the name. I hope to showcase it on my portfolio when I have a MVP of it. It's based on Laravel 5.3, Vue.js and jQuery. It'll include ajax calls to send JSON info directly from an object to a calculator where you can run calculations on your debt and its future.
+	            <br><br>
+	            <small><i>Features and functionality: HTML5, CSS3, Vue.js, Bootstrap, mobile resposiveness, MV framework, Laravel 5.3, jQuery, Ajax, JSON</i></small>
+	            </p>
+	          </div>
+
+	        </div>
+	      </div>
+	    </div>
+
     </div>
     <!-- /.content-section-a -->
     <section id="about" class="section">
@@ -222,11 +242,25 @@
         	<strong><small>LinkedIn</small></strong>
         </div>
     </div>
+
+	<!-- Vue templates -->
+	<template id="gallery-right">
+		<div @click="funcCall" class="col-lg-5 col-lg-offset-2 col-sm-6 gallery">
+			<img class="img-responsive" :src="photoSrc" alt="website view">
+		</div>
+	</template>
+
+	<template id="gallery-left">
+		<div @click="funcCall" class="col-lg-5 col-sm-pull-6  col-sm-6 gallery">
+	            <img class="img-responsive" :src="photoSrc" alt="website view">
+	          </div>
+	</template>
+
     <!-- Javascript files-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;amp;sensor=false"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;amp;sensor=false"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.js"></script>
     <script src="js/components.js"></script>
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
