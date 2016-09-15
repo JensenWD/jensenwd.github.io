@@ -36,6 +36,8 @@ html .eager-formspree {
     margin: 0 auto !important; }
   html .eager-formspree input {
     box-shadow: none !important; }
+  html .eager-formspree textarea {
+    box-shadow: none !important; }
 
 .under-construction {
   color: #7F7F7F !important;
