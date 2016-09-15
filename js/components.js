@@ -14,8 +14,6 @@ Vue.component('gallery-left', {
   })
 
 
-
-
 // Photos component
 new Vue ({
     el: '#img-rotate',

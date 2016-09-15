@@ -29,6 +29,18 @@ form {
 .skill-item {
   margin: -10px 0px; }
 
+.under-construction {
+  color: #7F7F7F !important;
+  /* Safari */
+  -webkit-transform: rotate(-45deg);
+  /* Firefox */
+  -moz-transform: rotate(-45deg);
+  /* IE */
+  -ms-transform: rotate(-45deg);
+  /* Opera */
+  -o-transform: rotate(-45deg);
+  margin-right: -45px; }
+
 .skill-item p {
   font-size: 1.1em;
   margin-top: -9px; }
@@ -54,6 +66,10 @@ form {
   margin-top: 45px; }
 
 .gallery {
+  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-inline-flex;
   padding: 10px 5px;
   max-height: 450px; }
   .gallery img {
